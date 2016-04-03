@@ -25,7 +25,7 @@ public class Program
                 {
                     rotatedTemp = Rotate(rotatedTemp);
                     result = Sum(result,rotatedTemp);
-                   
+                    
                 }
             Console.WriteLine(string.Join(" ", result));
         }
