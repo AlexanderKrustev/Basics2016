@@ -40,7 +40,19 @@ using System.Linq;
                     }
                 }
             }
-            Console.WriteLine(string.Join(" ",finalResut));
+
+        if (temp.Count > finalResut.Count) //if temp has more items than the final list, opy temp to final
+        {
+            finalResut.Clear(); // clear the old result
+
+            for (int j = 0; j < temp.Count; j++)
+            {
+                finalResut.Add(temp[j]);  // copy temp to final
+            }
+            temp.Clear(); // clear them we already have temp into the result
+           
+        }
+        Console.WriteLine(string.Join(" ",finalResut));
         }
     }
 
